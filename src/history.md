@@ -21,21 +21,21 @@ For what work could be had, a six-hour workday earned a carpenter five dollars, 
 
 J.W. Nicholson $10   
 J.W. Doolittle $25   
-A.J. McEwan $25
-A.G. Hovey $25{8th Grand Master of Oregon}
-J.L. Coombs $25
-Manly Danforth $15
-A.J. Alison $10
-Nat. H. Lane $30{early storekeeper}
-J.B. Congle $25{saddler, first mayor}
-J.R. Bayley $50{pharmacist, 1st Noble Grand}
-M. Stock $25
-G.P. Smith $10
-J.H. Dohse $25
-John Kelsay $10
-J.W. Williams $10{record 6 terms Noble Grand}
-E. Vineyard $25{Vineyard Mountain namesake}
-Total $345.00
+A.J. McEwan $25   
+A.G. Hovey $25{8th Grand Master of Oregon}   
+J.L. Coombs $25   
+Manly Danforth $15   
+A.J. Alison $10   
+Nat. H. Lane $30{early storekeeper}   
+J.B. Congle $25{saddler, first mayor}   
+J.R. Bayley $50{pharmacist, 1st Noble Grand}   
+M. Stock $25   
+G.P. Smith $10   
+J.H. Dohse $25   
+John Kelsay $10   
+J.W. Williams $10{record 6 terms Noble Grand}   
+E. Vineyard $25{Vineyard Mountain namesake}   
+Total $345.00   
 
 The Masons (AF&AM #14) won the race by thirty-six weeks, being chartered June 12, 1857. Barnum Lodge No. 7 was chartered on February 23, 1858. Corvallis's Odd Fellows Lodge was named for Eli M. Barnum, an energetic officer of the new Grand Lodge of Oregon. Its number seven indicates it was the seventh in Oregon. Six Lodges were in place in other Oregon cities along the settlement trail: Salem, Milwaukie, Oregon City, Albany, The Dalles, and Dallas. Only this last Lodge has succumbed to time (1989).The Odd Fellows and the Masons were the two Lodges capable of building Lodge Halls. The Odd Fellows did not do so, concentrating first on acquiring a cemetery (the I.O.O.F. Pioneer Cemetery of Corvallis) in 1863. The Masons built their first hall, and for a while Barnum Lodge No. 7 rented meeting space there. This first building was destroyed by fire in 1869.
 
