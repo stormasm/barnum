@@ -1,9 +1,9 @@
 Contact Us
 
-Independent Order of the Odd Fellow
-223  SW 2nd  St
-Corvallis, OR 97333
-Click here for map
+Independent Order of the Odd Fellow   
+223  SW 2nd  St   
+Corvallis, OR 97333   
+Click here for map   
 
 Organization Contacts
 
