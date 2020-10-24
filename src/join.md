@@ -1,4 +1,4 @@
-Join
+Join Barnum Lodge !
 
 In order to join the Lodge you must be sponsored by an Odd Fellow in good standing. Your sponsor will usually be a member of our Lodge but any Odd Fellow can sponsor you.
 

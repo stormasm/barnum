@@ -5,4 +5,4 @@
 	* [Barnum Lodge Charity](charity.md)
 	* [Join The Lodge](join.md)
 * [Hall Rental](hall-rental.md)
-* [Charitable Request](charity.md)
+* [Charitable Request](charitable-request.md)

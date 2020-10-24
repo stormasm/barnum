@@ -1,4 +1,4 @@
-Rental Rates
+Hall Rental Rates
 
 Located in the heart of Downtown Corvallis, our facilities are offered at friendly rates because we ask our renters to take full responsibility of the duties for set-up, tear down and cleaning of their events. The South Ballroom with it's beautiful brick and west facing wall of windows is ready for any large event or dance party. Our North Hall has a complete kitchen and ADA accessible bathroom. Both halls have projection screens and beautiful wood floors. From corporate conferences to birthday dance parties, we are ready to help you have a great event. Below is a minimum list of cleaning responsibilities. You may only use enclosed candles, no open flame is allowed. We welcome your choice of caterers and for events choosing to have bar service, beer, wine and cider products may be served. Any alcohol must be served by a licensed OLCC staff provided by your caterer or by our facility for an extra fee. Please see below for further details on our catering and alcohol policy.
 

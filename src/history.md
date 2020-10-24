@@ -1,4 +1,4 @@
-History
+Barnum Lodge History
 
 History of Odd Fellowship
 

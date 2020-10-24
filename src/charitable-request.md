@@ -1,4 +1,4 @@
-Charitable Request
+How To Make a Charitable Request To Barnum Lodge
 
 Thank you for choosing the Corvallis Odd Fellows for your charitable request. The mission of the Odd Fellows is to assist those in need in its community.
 
