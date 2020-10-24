@@ -16,9 +16,9 @@ Charity/Grant Committee
 Lodge SecretaryChair: All charity and grant request.
 
 Lodge Officers   
-Charles CarmichaelNoble Grand   
-John CriscitielloVice Grand   
-Cathy LorensenSecretary   
+Charles Carmichael  Noble Grand   
+John Criscitiello  Vice Grand   
+Cathy Lorensen  Secretary   
 
 Cemetery   
 Chelsea Henson   
