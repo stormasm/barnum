@@ -8,7 +8,8 @@ Click here for map
 Organization Contacts
 
 Business Office   
-Chelsea HensonBusiness Manager: Building and rental information(541) 752-3023
+Chelsea Henson   
+Business Manager: Building and rental information(541) 752-3023
 
 Charity/Grant Committee   
 
@@ -20,4 +21,5 @@ John CriscitielloVice Grand
 Cathy LorensenSecretary   
 
 Cemetery   
-Chelsea HensonAdminstrator
+Chelsea Henson   
+Adminstrator
