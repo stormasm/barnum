@@ -18,8 +18,9 @@ Depression in this early period continued for several years. By 1859 Wilson writ
 It is now almost impossible for the best of men to get hold of a red cent, they can by giving notice to money lenders a week or two in advance and promising to take a certain amount at three per cent a month, get a little."
 
 For what work could be had, a six-hour workday earned a carpenter five dollars, and for unskilled labor half that. It was in these circumstances that the charter brothers put forward their funds to found Barnum Lodge No. 7.We the undersigned members of the I.O.O.F. subscribe to the sums annexed to our several names for the purpose of defraying expenses connected with the obtaining a Charter for and putting successfully into operation a Subordinate Lodge of I.O.O.F. in the City of Corvallis. It being understood that at such time as the Treasury may be enabled to disburse such amount, that the money be refunded to the donors.
-J.W. Nicholson $10
-J.W. Doolittle $25
+
+J.W. Nicholson $10   
+J.W. Doolittle $25   
 A.J. McEwan $25
 A.G. Hovey $25{8th Grand Master of Oregon}
 J.L. Coombs $25
