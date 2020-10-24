@@ -5,18 +5,19 @@ Independent Order of the Odd Fellow
 Corvallis, OR 97333
 Click here for map
 
-Organization Contacts [ click on names for email ]
-Business Office
+Organization Contacts
+
+Business Office   
 Chelsea HensonBusiness Manager: Building and rental information(541) 752-3023
 
-Charity/Grant Committee
+Charity/Grant Committee   
 
 Lodge SecretaryChair: All charity and grant request.
 
-Lodge Officers
-Charles CarmichaelNoble Grand
-John CriscitielloVice Grand
-Cathy LorensenSecretary
+Lodge Officers   
+Charles CarmichaelNoble Grand   
+John CriscitielloVice Grand   
+Cathy LorensenSecretary   
 
-Cemetery
+Cemetery   
 Chelsea HensonAdminstrator
