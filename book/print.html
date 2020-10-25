@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title></title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'visible';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="home.html"><strong aria-hidden="true">1.</strong> Barnum Lodge</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="history.html"><strong aria-hidden="true">1.1.</strong> History</a></li><li class="chapter-item expanded "><a href="charity.html"><strong aria-hidden="true">1.2.</strong> Charity</a></li><li class="chapter-item expanded "><a href="join.html"><strong aria-hidden="true">1.3.</strong> Join The Lodge</a></li></ol></li><li class="chapter-item expanded "><a href="hall-rental.html"><strong aria-hidden="true">2.</strong> Hall Rental</a></li><li class="chapter-item expanded "><a href="charitable-request.html"><strong aria-hidden="true">3.</strong> Charitable Request</a></li><li class="chapter-item expanded "><a href="contact-us.html"><strong aria-hidden="true">4.</strong> Contact Us</a></li><li class="chapter-item expanded "><a href="cemetery.html"><strong aria-hidden="true">5.</strong> Cemetery</a></li><li class="chapter-item expanded "><a href="resources.html"><strong aria-hidden="true">6.</strong> Resources</a></li><li class="chapter-item expanded "><a href="privacy-policy.html"><strong aria-hidden="true">7.</strong> Privacy Policy</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Corvallis Odd Fellows ~ Barnum Lodge #7 ~ Est. February 23, 1858</p>
+<p>Welcome!</p>
+<p>The Odd Fellows is a fraternal and charitable non-profit organization that admits both men and women. The Lodge engages in a variety of activities in the service to the Corvallis community. The Lodge and its members support various charitable and non-profit organizations such as the Jackson Street Youth Shelter, the South Corvallis Food Bank, Doctors without Borders, Amnesty International and many others.</p>
+<p>Barnum Lodge No. 7 was chartered on February 23, 1858. Corvallis's Odd Fellows Lodge was named for Eli M. Barnum, an energetic officer of the new Grand Lodge of Oregon. Please visit the link in the left column to learn more about the history of the Odd Fellows and the Corvallis lodge.</p>
+<p>If you are interested in renting our facility, please click the Hall Rental link. There is also a calendar of events, so you may confirm that a date is available. The south Ballroom is host to a variety of dance classes that are open to the public. The Odd Fellows is proud to be a premier event location in Corvallis, for classes, dance events, and special occasions!</p>
+<p>If you have further questions please call our business office 541-752-3023 or via [ email ]</p>
+<p>Barnum Lodge History</p>
+<p>History of Odd Fellowship</p>
+<p>This page is an excerpt from The Three Link Fraternity - Odd Fellowship in California
+by Don R. Smith and Wayne Roberts</p>
+<p>Source page from the Sovereign Grand Lodge
+Corvallis Lodge History
+We've been with Corvallis almost from the beginning. Corvallis was incorporated in 1857 in the United States Territory of Oregon. Corvallis had served as the territorial capitol and the county seat before it was even incorporated!</p>
+<p>By 1860 the census showed 531 residents, but some say the population at incorporation was closer to three hundred. Fraternal organizations were a major feature of significant communities in the last century. A friendly rivalry ensued between the eighteen charter-member Freemasons and the eighteen charter-member Odd Fellows on which would be the first fraternal Lodge in Corvallis. The two groups pursued their parallel goals in tough times. The early flash of prosperity from mining and military had fizzled out. Early settler Wilson writes in 1854:</p>
+<p>Wages are down to almost States prices ... Money is scarce and commands from 20 to 50% ... The mercantile business is overdone ... There is no manufacturing--money is drawn from the country and beef is all they ship out ... The main dependence will be on immigrants&quot;</p>
+<p>Depression in this early period continued for several years. By 1859 Wilson writes</p>
+<p>It is now almost impossible for the best of men to get hold of a red cent, they can by giving notice to money lenders a week or two in advance and promising to take a certain amount at three per cent a month, get a little.&quot;</p>
+<p>For what work could be had, a six-hour workday earned a carpenter five dollars, and for unskilled labor half that. It was in these circumstances that the charter brothers put forward their funds to found Barnum Lodge No. 7.We the undersigned members of the I.O.O.F. subscribe to the sums annexed to our several names for the purpose of defraying expenses connected with the obtaining a Charter for and putting successfully into operation a Subordinate Lodge of I.O.O.F. in the City of Corvallis. It being understood that at such time as the Treasury may be enabled to disburse such amount, that the money be refunded to the donors.</p>
+<p>J.W. Nicholson $10<br />
+J.W. Doolittle $25<br />
+A.J. McEwan $25<br />
+A.G. Hovey $25{8th Grand Master of Oregon}<br />
+J.L. Coombs $25<br />
+Manly Danforth $15<br />
+A.J. Alison $10<br />
+Nat. H. Lane $30{early storekeeper}<br />
+J.B. Congle $25{saddler, first mayor}<br />
+J.R. Bayley $50{pharmacist, 1st Noble Grand}<br />
+M. Stock $25<br />
+G.P. Smith $10<br />
+J.H. Dohse $25<br />
+John Kelsay $10<br />
+J.W. Williams $10{record 6 terms Noble Grand}<br />
+E. Vineyard $25{Vineyard Mountain namesake}<br />
+Total $345.00</p>
+<p>The Masons (AF&amp;AM #14) won the race by thirty-six weeks, being chartered June 12, 1857. Barnum Lodge No. 7 was chartered on February 23, 1858. Corvallis's Odd Fellows Lodge was named for Eli M. Barnum, an energetic officer of the new Grand Lodge of Oregon. Its number seven indicates it was the seventh in Oregon. Six Lodges were in place in other Oregon cities along the settlement trail: Salem, Milwaukie, Oregon City, Albany, The Dalles, and Dallas. Only this last Lodge has succumbed to time (1989).The Odd Fellows and the Masons were the two Lodges capable of building Lodge Halls. The Odd Fellows did not do so, concentrating first on acquiring a cemetery (the I.O.O.F. Pioneer Cemetery of Corvallis) in 1863. The Masons built their first hall, and for a while Barnum Lodge No. 7 rented meeting space there. This first building was destroyed by fire in 1869.</p>
+<p>A.W. Bowersox is to date the Barnum Lodge Past Grand that has gone the furthest in service to the Order. Brother Bowersox was elected Grand Master of the Grand Lodge of Oregon at its fifty-seventh session (1912) and Grand Representative (of Oregon to Sovereign Grand lodge} at the 58th session (served 1912-1914). Many souvenirs of his attendance at many Grand Lodge and Sovereign Grand Lodge sessions are treasures of the Lodge. The most significant of these are framed and hang in a place of honor in the Lodge Room.Barnum Lodge Number Seven has been the host Lodge for Grand Lodge sessions five times: in 1863, 1931, 1940, 1958, and 1968.</p>
+<p>--Robert Wilderson</p>
+<p>Barnum Lodge Charity</p>
+<p>Barnum No. 7 Independent Order of the Odd Fellow invites you to explore the community that is Odd Fellowship. Our lodge is a family of brothers and sisters working to build a world that we want to leave to future generations.
+At Barnum Lodge we offer:</p>
+<ul>
+<li>A unique environment of caring and supportive folks to learn and grow with.</li>
+<li>We strive to become better people.</li>
+<li>A way to support many local, national and international charities.</li>
+</ul>
+<p>The moment you walk up the stairs at the Corvallis Odd Fellowship Hall you will be met with the warmth and comradery that 200 years our foundational beliefs of Friendship, Love, and Truth have built. Barnum Lodge No. 7 is, amongst other things, a charitable organization that uses much of the money it generates through facility rentals to aid worthy organizations, events and individuals. If you are looking for an opportunity to be of service to your community, while enjoying making new friends, there is a place for you in this organization.</p>
+<p>We seek people of good character that believe we can make a difference in our world.  Barnum Lodge No. 7 could use your help. The work we do is worthwhile and important. The more active members we have, the easier it becomes to do our work and the more we can take on. We invite you to join in that work by becoming a member of the Lodge.</p>
+<p>The independent Order of Odd Fellows is a fraternal organization founded upon the principles of Friendship, Love and Truth. These three principles, we believe are essential for the future of our country, our community and our society. Friendship is the strongest bond of our association. As a member you are bound to participate with your brothers and sisters to safeguard our members and families in times of adversity and aid those in distress. Love is the link which requires neighborliness to our fellow human beings, which comes only after all hatred, envy and selfishness have been laid aside. Truth is the standard by which we value people. It is the foundation of our society. United together we can make a greater impact on our community than we can as individuals. We hope you will consider joining us at Barnum Lodge No. 7 in our effort to make a better community and world.</p>
+<p>Local</p>
+<p>Barnum lodge #7 Charity giving
+Barnum lodge  #7 has a very active giving program.  Though a set of grant giving programs the Lodge has been giving more than $20,000 dollars yearly to individuals and groups. In the next few years we hope to more that double this level.  These grants can be given to relieved the distress of people, usually in less than 6 weeks.  While names are not mentioned money for individuals go to people to help with medical needs, utilities and so on after other resources are unavailable.  Money for groups local has helped feed the local poor, homeless and distressed.  Also charity grant have been give locally for international aid, Friend of the Orphans (to help orphans in central American), Mercy Corp (international medical emergencies) and Oxfam (development aid), for instance.  Just listing all the recipients would take many pages.</p>
+<p>Beside giving money the Odd Fellows have donated the meeting hall for many community service event, lectures, movies, writer group and so many other activities.</p>
+<p>Here are a few of the thank you letters sent to Barnum lodge  Click here</p>
+<p>National &amp; International</p>
+<p>Educational Foundation
+The Education Foundation of the Independent Order of Odd Fellows began on September 20, 1927.  The purposes of the foundation is to operate a Revolving Loan Fund for students and is supported by donations to a trust.  Low interest rate loans are made for two or four year programs at an accredited college or university and for study at any recognized trade school after completion of high school.
+R. Kenneth Babb, Executive Director
+PO BOX 20455
+Winston-Salem NC  27120
+United States of America
+Tel: 336-724-5166
+Fax: 336-724-5116
+Email:  [ email ]</p>
+<p>Odd Fellow / Rebekah Visual Research Foundation
+Odd Fellows and Rebkeahs work to advance eye research through Professorships in Ophthalmology at the world famous Wilmer Ophthalmoligical Institute at John Hopkins School of Medicine in Baltimore, Maryland. The Odd Fellow World Eye Bank and Visual Research Foundation established in 1956 conducts intensive studies of corneal transplantation, allergic and congenital diseases of the eye.
+Wesley Nelson, Chairman
+24 Northmount Dr NW
+Calgary AB  T2K 3E8
+Canada
+Tel: 403-274-4644
+Fax: 403-274-4644
+Email: [ email ]
+Donations:
+C/O The Sovereign Grand Lodge, IOOF
+422 Trade Street
+Winston-Salem NC  27101-2830
+United States of America</p>
+<p>The SGL/IARA Joint Youth Committee
+Keith Ploof, Chairman
+PO BOX 54
+Highgate Center VT  05459
+United States of America
+Tel: 802-868-4943
+Fax:  802-868-5043
+Email:  [ email ]
+United Nations Pilgrimage for Youth
+We in Odd Fellowship are proud of the opportunity we give students who have completed their sophomore or junior year of high school. Groups of selected students are transported to New York where they have the opportunity to learn about the work the United Nations is doing to promote world peace, to educate the people of the world, and to relieve their suffering whether by famine, disease, or war. Students enjoy a question and answer period that sharpens their comprehension of United Nations affairs. That is but a small part of the learning experience for those selected to participate. The students are taken to many historical places and have a first hand view of their country’s beginning and of the Civil War. They visit many of the cultural and educational centers of the nation. Coming as they do from all areas of the United States and several foreign countries, they exchange views of education, politics, religion, world relationships and cultures. This learning and growing experience provided by Odd Fellows and Rebekahs is one of the most important and effective programs that we have. Approximately 42,000 students have participated in the United Nations Pilgrimage. No other organization is accorded this privilege
+Provides the opportunity for students who have completed their sophomore or junior year of high school to learn about the work the United Nations is doing to promote world peace, to educate the people of the world and to relieve their suffering whether by famine, disease, or by war.  No other organization is accorded this privilege.
+(IOOF United nations Educational Pilgrimage for Youth, Inc.) Charles Benson, Executive Director
+422 Trade St
+Winston-Salem NC  27101-2830
+United States of America
+Tel: 888-247-4983
+Fax: 613-962-3826
+Email: [ email ]
+Website: www.unpilgrimage.org</p>
+<p>Arthritis Advisory Board
+Odd Fellows and Rebekahs contribute to Arthritis Foundation where funds aid in research to find the cause, ways to prevent and treatments methods to fight this painful and crippling disease.
+Les D. Robertson, Chairman
+11932 Taylor Rd
+Churubusco IN  46723-9471
+United States of America
+Tel: 260-693-2360
+Fax: 260-693-2715
+Email:  [ email ]</p>
+<p>Odd Fellow and Rebekah Home Association
+The first Odd Fellow Home was established in 1872 in Pennsylvania. In a few years this grew to 65 homes located in most of the states and some foreign countries. Well over 100,000 orphans and aged members have been admitted to our homes in the intervening years
+Mark Ulrich, President
+1107 Walnut St
+Devils Lake ND  58301-3240
+United States of America
+Email: [ email ]
+Hunger and Disaster Relief Funds
+We demonstrate our obligation in &quot;relieving the distressed&quot; by providing funds for aid in natural disaster of flood, fire or earthquake.  This fund is supported entirely by donations and contributions by Odd Fellows and Rebekahs and the need for donations in always eminent.
+Terry Barrett, SGS
+422 Trade St
+Winston-Salem NC  27101
+United States of America
+Tel: 800-235-8358
+Fax: 336-722-7317
+Email:  [ email ]</p>
+<p>Community Service &amp; Living Legacy
+Instituted in 1989 with the goal of planting trees to beautify the environment and improve our ecology.  &quot; Plant a tree for those who come after me&quot;.  Many lodges have participated with their city Parks or Recreation Departments of School districts to plant trees in many areas where shade and environmental improvements would be appreciated.  Often Lodges plant trees in honor of members who have passed away.
+Mavis Paull
+422 Trade St
+Winston - Salem NC  27101-2830
+United States of America</p>
+<p>IOOF SOS Children's Village
+Several years ago, recognizing a need to care for orphaned, abandoned, neglected, and abused children, a non-governmental child welfare organization was formed which is now known as the SOS Children’s Villages and provides loving, stable homes in over 132 countries around the world. They serve all children in need regardless of race, nationality or creed. Every child is assured of the love and support of a surrogate parent with brothers and sisters, the opportunity to live in a permanent house, and the positive experience of being part of a larger village community. This prepares them to take their rightful place in society as happy, responsible, and productive adults.
+That is precisely what the Independent Order of Odd Fellows did when our children’s homes were operating all over this country for more than a century. At one time the Odd Fellows and Rebekahs had 65 children’s homes in the U.S. and were caring for over 100,000 children. The SOS Village Organization at this time has 456 Villages serving over 58,000 children.</p>
+<p>A partnership between the I.O.O.F. and The SOS Children’s Villages will be an ideal relationship between the two most dedicated, private, non-governmental, non-profit organizations in the world who are dedicated to protecting and nurturing orphans and all children in need. There are currently three SOS Villages in the United States and The I.O.O.F. is in the process of building a SOS Village in Cambodia which is planned for dedication in 2006.</p>
+<p>Henry &quot;Hank&quot; Dupray, PSGM
+1922 Jackson St
+Wilmington NC  28401
+United States of America
+Tel: 910-763-7660
+Fax: 910-763-7910
+Email: [ email ]</p>
+<p>Information from  the www.iooftx.org and www.ioof.org web sites</p>
+<p>Join Barnum Lodge !</p>
+<p>In order to join the Lodge you must be sponsored by an Odd Fellow in good standing. Your sponsor will usually be a member of our Lodge but any Odd Fellow can sponsor you.</p>
+<p>You must fill out an application form. You can get the application form from you sponsor, at the lodge hall or by filling out the membership application form on this website (below).</p>
+<p>When you come to the Lodge you will need to have your application filled out and be prepared to pay the application fee of $40. You will then be interviewed by a committee of members. One question you will be asked is whether you believe in a supreme being, creator and preserver of the universe. If you cannot give an affirmative answer to this question you cannot be admitted as an Odd Fellow.</p>
+<p>After you have been interviewed the Lodge will review your application and the report of the interviewing committee. The Lodge then votes to accept you as a member. After the vote, your sponsor will inform you of the outcome of the vote.</p>
+<p>If you are accepted as a member of the Lodge you will than have to be initiated. This can happen either at your Lodge or at some other Lodge that is initiating.</p>
+<p>What Does Odd Fellowship Do For You?</p>
+<p>Leadership Training</p>
+<p>A More Purposeful Life</p>
+<p>Enduring Friendships</p>
+<p>Community Activity Participation</p>
+<p>A Broadening of Your Mind</p>
+<p>Opportunities to Help Children, the Elderly, and People of In Between Ages</p>
+<p>Good Fellowship</p>
+<p>An Inner Satisfaction That Money Cannot Buy</p>
+<p>A Warm Welcome in Strange Cities and Distant Lands</p>
+<p>Hall Rental Rates</p>
+<p>Located in the heart of Downtown Corvallis, our facilities are offered at friendly rates because we ask our renters to take full responsibility of the duties for set-up, tear down and cleaning of their events. The South Ballroom with it's beautiful brick and west facing wall of windows is ready for any large event or dance party. Our North Hall has a complete kitchen and ADA accessible bathroom. Both halls have projection screens and beautiful wood floors. From corporate conferences to birthday dance parties, we are ready to help you have a great event. Below is a minimum list of cleaning responsibilities. You may only use enclosed candles, no open flame is allowed. We welcome your choice of caterers and for events choosing to have bar service, beer, wine and cider products may be served. Any alcohol must be served by a licensed OLCC staff provided by your caterer or by our facility for an extra fee. Please see below for further details on our catering and alcohol policy.</p>
+<p>We offer a non-profit rate to those organizations who have 501(c)3 status. Those rates are listed below. We also offer a 'continual' use rate to those who would like to teach a class or series of workshops. Please call or email for details and space availability.
+Office: 541-752-3023  [ manager@corvallisoddfellows.org ]</p>
+<p>~ Friendship Ballroom (South Hall) Capacity 175 3354 Sq. Ft. ~
+Weekday – 4 hour minimum 8am to 12am
+Daytime Monday – Thursday                     $48.00/hr
+Evening Monday – Thursday                     $58.00/hr</p>
+<p>Weekend – 6 hour blocks from 8am to 12am
+Friday, Saturday -                                       $600.00
+Sunday -                                                     $400.00</p>
+<p>~ North Hall Dining Room Capacity 100 1684 Sq. Ft. ~
+Weekday – 3 hour minimum 8am to 12am
+Daytime Monday – Thursday -                    $48.00/hr
+Evening Monday – Thursday -                    $58.00/hr</p>
+<p>Weekend – 6 hour blocks from 8am to 12am
+Friday, Saturday -                                      $600.00
+Sunday -                                                    $400.00</p>
+<p>~ Entire Hall - Ballroom, North Hall Dining Room &amp; Kitchen ~
+Weekday – 6 hour blocks from 8am to 12am
+Daytime Monday – Friday -                         $75.00/hr
+Evening Monday – Thursday -                    $95.00/hr</p>
+<p>Friday or Saturday Evening Only 6pm to 12am -         $950.00</p>
+<p>Weekend – 10 hour blocks from 8am to 12am
+Saturday -                                                                   $1300.00
+Additional hourly rate -                                               $100.00/hr</p>
+<p>Non-Profit rate
+Weekday – 3 hour minimum from 8am to 12am
+Daytime Monday – Thursday -                                                     $38.00/hr
+Evening Monday – Thursday-                                                      $48.00/hr</p>
+<p>Weekend – 6 hour blocks from 8am to 12am
+Friday, Saturday, Sunday (1 space) -                                           $400.00
+Friday, Saturday, Sunday (Full Facility) -                                      $600.00</p>
+<p>~ Additional areas and fees ~
+Kitchen Only – 6 hour blocks from 8am to 12am
+Weekday Monday – Thursday (including evenings) -                        $180.00
+Kitchen Only – 8 hour blocks from 8am to 12am
+Weekend Friday, Saturday &amp; Sunday (including evenings) -             $240.00</p>
+<p>The deposit rate is 50% of your estimated event rental total.
+If your rental rate is less than $300, your rental fees are due in full 1 week prior to your event. Some exceptions will apply.</p>
+<p>Overtime Hall fee after 12am                                                   $100/hr
+Overtime Staff fee after 12am                                                  $50/hr
+Additional Staff (servers, bartenders or movers)                     $20/hr
+Custodial fee ranges from $40-$100
+Any event with over 100 guests will have an added Staff fee which will correlate with your event hours</p>
+<p>General Renter Responsibilities:</p>
+<p>All chairs, tables and stage modules must be returned to their original positions at the end of the event
+All decor should be removed and garbage should be cleaned and placed in the proper receptacles which will be provided
+Evening events wishing to book past midnight may do so. However no event or persons shall be in the building past 2am and additional fees will apply.</p>
+<p>Food and beverage policy</p>
+<p>No food or drink are allowed anywhere on the Property without prior approval by facility. Should your public event include serving of any alcoholic beverages (beer/wine/cider only) you must obtain an alcohol serving permit from the Oregon Liquor Control Commission. You must also hire OLCC licensed staff to manager the bar area. If you cannot obtain an OLCC server they will be provided for you at additional staffing fee. The serving permit, the Servers permit and proof of alcohol indemnity insurance must be submitted to the Business Manager 5 days prior to your event.  If you provide your own alcohol, an OLCC licensed server must manage your service and will be provided for you for an extra staffing fee. Self-service of alcohol is prohibited. Once the bar area is closed, no alcohol will be served. Distilled spirits are not permitted, beer, wine and cider are the only alcohol beverages permitted on the property.  If you are using a licensed caterer all these items should be provided for and managed by the caterer. If any of these policies are violated the event manager reserves the right to close your event at any time and no refund will be entitled to the customer.</p>
+<p>How To Make a Charitable Request To Barnum Lodge</p>
+<p>Thank you for choosing the Corvallis Odd Fellows for your charitable request. The mission of the Odd Fellows is to assist those in need in its community.</p>
+<p>The Odd Fellows makes grants in two different ways. They can make monetary donations to assist an individual, a non-profit organization or they can grant use of the Odd Fellow facility for community organizations to host special events.</p>
+<p>Monetary grants are not for regular, continual funding of an organization. They are one-time donations only and generally do not exceed $1000.00. Use of the Odd Fellow facility may be donated for the use of a non-profit organization and are also on a non-continual basis. Individual assistance is granted to pay a one-time need. These generally do not exceed $500. No one person will receive the grant, it must be paid directly to the agency, utility or other secured business.</p>
+<p>Request for monetary grants or facility donations should be sent to the Lodge Secretary in the form of a donation proposal. Monetary grant requests must also be presented by a sponsor or agency, not the individual. Any proposals will be presented at the next regular lodge meeting. Regular Lodge meetings occur on the 1st and 3rd Tuesday’s of each month. Each donation or facility grant must be sponsored by a member of the Lodge and the Lodge body must vote to approve the grant. If a member of the Lodge is willing to sponsor the donation, this member will become the point of contact to the organization. This member will contact the organization and inform them of the approval of the grant. If the grant is a facility donation the sponsoring member is also responsible for the logistics, coordination and representation of the facility and the event.</p>
+<p>Due to the meeting schedule of the Lodge the grant process will take a minimum of 45 days. Please be aware that the Grant Committee must make contact with the group or individual making the request and then make a full report to the lodge members. If the members need more information the committee must gather more information and then again report to the members. If you have a deadline that must be met, please take this timeline into consideration. If a grant is not approved the organization will be contacted by the Lodge Secretary.</p>
+<p>Please click [ here ] to email the Lodge Secretary for more information.</p>
+<p>Contact Us</p>
+<p>Independent Order of the Odd Fellow<br />
+223  SW 2nd  St<br />
+Corvallis, OR 97333<br />
+Click here for map</p>
+<p>Organization Contacts</p>
+<p>Business Office<br />
+Chelsea Henson<br />
+Business Manager: Building and rental information(541) 752-3023</p>
+<p>Charity/Grant Committee</p>
+<p>Lodge SecretaryChair: All charity and grant request.</p>
+<p>Lodge Officers<br />
+Charles Carmichael  Noble Grand<br />
+John Criscitiello  Vice Grand<br />
+Cathy Lorensen  Secretary</p>
+<p>Cemetery<br />
+Chelsea Henson<br />
+Adminstrator</p>
+<p>IOOF Pioneer Cemetery</p>
+<p>The Odd Fellows Cemetery Association of Corvallis (OFCA), an Oregon corporation and a 501(c)3 non-profit, operates the historic cemetery atop Cemetery Hill* (4343 Witham Hill Drive) in Corvallis under the supervision of the Oregon Mortuary and Cemetery Board.
+*Witham Hill is actually the wooded hill southwest of the Cemetery, but all high ground in the vicinity is popularly called &quot;Witham Hill&quot; now.</p>
+<p>Like most non-profit single-purpose corporations, operating this cemetery is its sole &quot;business.&quot; This is carried out as our duty as Odd Fellows to &quot;bury the dead.&quot; The association has a Board of Directors, four in number; who are also the Trustees of Barnum Lodge No. 7, I.O.O.F. The OFCA is thus a &quot;daughter corporation&quot; of the Corvallis Lodge. Its various tax and legal reports are included in the Lodge's filings (e.g. Form 990).</p>
+<p>The manager coordinates the various tasks needed to operate the cemetery, including arranging mowing the grounds and maintaining their accessibility to survivors and visitors maintaining the cemetery records and fielding questions concerning them coordinating and supervising burials selling lots.</p>
+<p>There are no fixed office hours for the OFCA. The Directors and Manager make time from their other pursuits for these duties as they can. Most operational decisions (paying bills, setting policy) are made at the regular monthly Board meeting.</p>
+<p>Other cemetery operational business is done by appointment.</p>
+<p>As Odd Fellows have always done as their Duty, YES, we will bury the indigent and the unfortunate. There are no restrictions on who may be buried ; no affiliation with our Order is required. As a matter of heritage, we do encourage local families and members of the Order to consider choosing their internment place atop historic Cemetery Hill.</p>
+<p>CONTACT CAN ALWAYS BE MADE BY MESSAGE BY CALLING 1 (541) 752-3023</p>
+<p>To see the Corvallis Odd Fellows' Historic Cemetery, go to Find a Grave by clicking on this logo above.  Many thanks to Anonymous for his or her lovely photos. We are fortunate to have such a dedicated  and talented fan of our historic cemetery.</p>
+<p>Links</p>
+<p>Below are links to other useful resources.</p>
+<p>Sovereign Grand Lodge</p>
+<p>North American Grand lodge</p>
+<p>Downtown Corvallis Association</p>
+<p>Supporting downtown businesses
+Charity navigator
+Independent charity evaluator
+Give.org
+Helps donors make informed giving decisions
+Find-a-Grave
+Find people buried in Odd Fellows cemetery
+Tools for Organizations
+Non-profit friendly web development.</p>
+<p>Privacy Policy</p>
+<p>Independent Order Of Odd Fellows (&quot;IOOF&quot;) provides access and use of this site (&quot;Site&quot;) subject to your agreement to the following &quot;Terms of Use&quot; (the &quot;Terms&quot;). Please read these Terms carefully before accessing or using the Site. By accessing or using the Site, you agree to be bound by these Terms.
+The Terms, as well as the Site (and information contained within the Site) may be updated or revised from time to time without notice to you. You agree to periodically review these Terms, and your continued access to or use of the Site shall constitute your acceptance of the updated or revised Terms.</p>
+<p>Contact Information
+If asked to provide your e-mail address during your use of the site, please provide an accurate and complete e-mail address. We may also ask for other personal information on our site in order to provide you with volunteer opportunities.</p>
+<p>Use of Information and Services
+Third parties may be linked to, or may provide certain information displayed on the Site. Although IOOF believes that such information comes from trustworthy sources, the third-party information is not necessarily sponsored, endorsed, recommended, or licensed by IOOF. You should directly contact the third parties and/or their references for the most accurate information.</p>
+<p>Advice
+Neither IOOF nor its information sources or users are engaged in giving legal, medical, counseling or other professional services or advice in this Site.</p>
+<p>No Liability
+Under no circumstances will IOOF be liable for any consequence relating directly or indirectly to any action or inaction you take based on the information, services or other material on the Site. While IOOF will attempt to keep its Site current, accurate, and complete, IOOF and its suppliers cannot guarantee, and will not be responsible for any damage or loss related to, the timeliness, accuracy, or completeness of the information, services, or other material on the Site.</p>
+<p>Site Conduct
+When using the Site, you agree to abide by the following rules: (a) you may not post or transmit content (information, data, text, software, graphics, sound, photographs, video, messages, etc.) (&quot;Content&quot;) that is unlawful, harassing, libelous, defamatory, obscene, fraudulent, harmful, threatening, abusive, hateful, that violates the property rights of others (including without limitation infringing use of a copyright or trademark), that violates the privacy or publicity right of others, or are otherwise objectionable; (b) you may not interfere with others' use of the Site; (c) you may not use the Site to conduct any activity that is illegal or that violates the rights of others; (d) you may not use the Site to advertise or sell products or services to others; (e) you may not impersonate any person or entity, or falsely state or otherwise misrepresent your affiliation with a person or entity; (f) you may not post or transmit Content that you do not have a right to transmit under any law or under contractual or fiduciary relationship (such as inside information, confidential information, etc.); (g) you may not post Content to the Site unless the Content is freely owned by you or used with the permission of all other persons with any rights in the Content; and (h) you may not use the Site to collect or store personal data about other users.</p>
+<p>Removal of Content
+IOOF does not do a prior review of Content posted by any party other than IOOF and has no responsibility for Content posted by any party other than IOOF to the Site. However, IOOF reserves the right in its sole discretion to delete any Content submitted to or appearing on the Site. Message boards, &quot;chat rooms&quot; and/or other information sharing locations on the Site may contain the opinions and views of other users. IOOF is not responsible for the accuracy of any messages or postings on the Site. If you believe that any Content posted on the Site is infringing, defamatory or otherwise violate the letter or spirit of these Terms, please contact IOOF immediately.</p>
+<p>Submission of Content
+If you submit Content to the Site, you grant to IOOF, or warrant that the owner of such Content has expressly granted to IOOF, a world-wide, royalty-free, perpetual, irrevocable, transferable, non-exclusive and fully sublicense right and license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform and display such Content (in whole or part) and to incorporate such Content in other works in any form, media, or technology now known or later developed.</p>
+<p>Internet Links
+The Site may provide, or third parties may provide, links to other Internet sites. IOOF has no control over such sites; IOOF does not endorse, and is not responsible for, any such sites or the information, material, products or services contained on or accessible through those sites. You acknowledge that IOOF shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance upon any such information, material, products, or services.</p>
+<p>Third Parties
+Your correspondence or business transactions with, or participation in promotions of, third parties found on, or e-commerce through, the Site and any other terms, conditions, warranties or representations associated with such dealings, are solely between you and such third party. You agree that IOOF shall not be responsible or liable for any loss or damage of any sort incurred as the result of any such transactions or as the result of the presence of such third parties on the Site.</p>
+<p>Indemnification
+You agree to indemnify, defend and hold harmless IOOF, its affiliates, governing board, officers, agents, employees, partners, and suppliers from any liability, loss, claim, demand, and expense (including reasonable attorneys' fees) related to (a) your use of the Site; (b) your violation of these Terms; or (c) your posting of Content to the site.</p>
+<p>Modifications to Site
+IOOF reserves the right to, from time to time, discontinue, temporarily or permanently, the information, services, products, and/or other Content on the Site with or without notice.</p>
+<p>Use and Storage of Content on the Site
+IOOF may establish general practices and limits concerning the use of the Site, including without limitation, the maximum number of days that Content will be available on, or retained by, the Site. IOOF, in its sole discretion, reserves the right to change these general practices and limits at any time.</p>
+<p>Ownership of Content
+All information on the Site, as well as the organization and layout of the site, other than Content posted by you, is owned and copyrighted by IOOF or its suppliers or other Site users. Except as expressly authorized by IOOF, you may not copy, distribute, resell, display, sublicense or create derivative works based on any such information from the Site, in whole or in part.</p>
+<p>Disclaimer of Warranty
+YOU EXPRESSLY UNDERSTAND AND AGREE THAT THIS SITE, AND ALL INFORMATION AND CONTENT ON THIS SITE, IS PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS. IOOF AND ITS INFORMATION SUPPLIERS DISCLAIM ALL EXPRESS AND IMPLIED WARRANTIES WITH REGARD TO THE SITE AND ALL INFORMATION, SERVICES, AND MATERIALS CONTAINED ON THE SITE, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IOOF MAKES NO WARRANTY THAT: (a) THE SITE WILL MEET YOUR REQUIREMENTS OR THAT THE RESULTS THAT MAY BE OBTAINED FROM THE SITE WILL BE SATISFACTORY; (b) THE SITE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE; (c) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE SITE WILL MEET YOUR EXPECTATIONS, AND; (d) ANY ERRORS IN THE SITE WILL BE CORRECTED.</p>
+<p>NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM IOOF OR HROUGH THE SITE SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THE TERMS.</p>
+<p>Limitation of Liability
+IN NO EVENT SHALL IOOF OR ITS AFFILIATES, GOVERNING BOARD, OFFICERS, AGENTS, EMPLOYEES, PARTNERS OR SUPPLIERS BE LIABLE FOR ANY SPECIAL, INDIRECT, PUNITIVE, INCIDENTAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, BUSINESS, DATA OR PROFITS, LITIGATION AND THE LIKE, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WITH RESPECT TO GOODS OR SERVICES PURCHASED DIRECTLY FROM IOOF THROUGH THE SITE, IOOF'S LIABILITY, IN ANY CASE, IS EXPRESSLY LIMITED TO REPLACEMENT OF DEFECTIVE GOODS, OR, AT IOOF'S ELECTION, TO THE REPAYMENT OR CREDITING TO YOU OF AN AMOUNT EQUAL TO THE PURCHASE PRICE OF THE GOODS. YOU ACKNOWLEDGE AND AGREE THAT THE LIMITATIONS SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THESE TERMS OF USE AND THE SITE WOULD NOT BE PROVIDED TO YOU ABSENT SUCH LIMITATIONS.</p>
+<p>If any jurisdictions do not allow the foregoing limitations of liability, the foregoing limitations may not apply to you.</p>
+<p>Termination
+IOOF may, in its sole discretion, with or without notice, suspend or terminate your use of this Site, and remove and discard any Content on the Site, for any reason, including, without limitation if you violate these Terms. IOOF may also bar you from any future access to the Site. IOOF will not be liable to you for any such suspension, termination or prohibition on future access. Should you object to any subsequent modifications of the terms and conditions of these Terms, your sole recourse will be to immediately notify IOOF of your termination of these Terms, which termination will be effective immediately. To the extent permitted by applicable law, the terms and conditions of these Terms will survive any termination of these Terms.</p>
+<p>Notices
+Any notices to you by IOOF can be made by either e-mail, regular mail, or telephone.</p>
+<p>General Provisions
+These Terms constitute the entire agreement between you and IOOF and govern your use of the Site, superseding any prior agreements between you and IOOF regarding the Site (including, but not limited to, any prior versions of these Terms). These Terms and the resolution of any dispute related to these Terms or the Site shall be governed by and construed in accordance with the laws of the State we are located in, without giving effect to any principles of conflicts of law. IOOF's failure to insist upon strict enforcement of any provision of these Terms shall not be construed as a waiver of any provision or right. If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions of these Terms will be enforced in accordance with their terms. The section headings in these Terms are for convenience only and have no legal or contractual effect. Regardless of any statute or law to the contrary, you hereby waive your right to bring any claim against IOOF more than 1 year after such claim first arose.</p>
+<p>Arbitration
+Any controversy or claim arising out of or relating to these Terms will be settled by binding arbitration in accordance with the commercial arbitration rules of the American Arbitration Association. Any such controversy or claim will be arbitrated on an individual basis, and will not be consolidated in any arbitration with any claim or controversy of any other party. You consent to the arbitration being conducted  at a location selected by IOOF within the State we are located in. Judgment on the arbitration award may be entered in any court having jurisdiction thereof. Either you or IOOF may seek any interim or preliminary equitable relief from a court of competent jurisdiction in  as necessary to protect the rights or property of you or IOOF pending the completion of arbitration.</p>
+<p>Privacy Policy
+IOOF is committed to respecting the privacy of online visitors and pledges its best efforts to that end. In general, you can visit IOOF on the Web without telling us who you are or revealing anything about yourself.</p>
+<p>Our Web server automatically recognizes each visitor's domain name, but does not automatically collect personally identifiable information. There are times, however, such as when you place a product order or register for an event, that we will collect specific information. If you choose to provide personally identifiable data, you may receive future information from us--by mail, electronically or by telephone--advising you of upcoming IOOF events, services, new products, or volunteer and support opportunities. If you do not wish to be contacted with such information, please let us know by writing or sending e-mail to the addresses listed on the Contact Us Web Page</p>
+<p>A &quot;cookie&quot; is a small piece of data stored on your computer's hard drive when you visit our Web site. IOOF uses cookies to analyze our Web site's overall traffic patterns and improve our visitors' online experience. We do not use cookies to store or collect any personal information. Many browsers provide an option to block or remove cookies. You can visit our website successfully while blocking cookies, but leaving cookies enabled in your browser will help us to improve our site's usability and effectiveness. Some areas of our online volunteer registration, orientation, and other areas require the use of cookies in order to maintain the security of your information, and allow you to go from one page to the next without entering your information multiple times.</p>
+<p>In order to provide a more comprehensive and useful site, the IOOF Web site contains links to other Web sites. IOOF is not responsible for the privacy practices of these sites.</p>
+<p>Contact Information about information contained on this page, and this website:
+Contact Us Web Page</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

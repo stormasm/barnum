@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Charity</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'visible';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="home.html"><strong aria-hidden="true">1.</strong> Barnum Lodge</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="history.html"><strong aria-hidden="true">1.1.</strong> History</a></li><li class="chapter-item expanded "><a href="charity.html" class="active"><strong aria-hidden="true">1.2.</strong> Charity</a></li><li class="chapter-item expanded "><a href="join.html"><strong aria-hidden="true">1.3.</strong> Join The Lodge</a></li></ol></li><li class="chapter-item expanded "><a href="hall-rental.html"><strong aria-hidden="true">2.</strong> Hall Rental</a></li><li class="chapter-item expanded "><a href="charitable-request.html"><strong aria-hidden="true">3.</strong> Charitable Request</a></li><li class="chapter-item expanded "><a href="contact-us.html"><strong aria-hidden="true">4.</strong> Contact Us</a></li><li class="chapter-item expanded "><a href="cemetery.html"><strong aria-hidden="true">5.</strong> Cemetery</a></li><li class="chapter-item expanded "><a href="resources.html"><strong aria-hidden="true">6.</strong> Resources</a></li><li class="chapter-item expanded "><a href="privacy-policy.html"><strong aria-hidden="true">7.</strong> Privacy Policy</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Barnum Lodge Charity</p>
+<p>Barnum No. 7 Independent Order of the Odd Fellow invites you to explore the community that is Odd Fellowship. Our lodge is a family of brothers and sisters working to build a world that we want to leave to future generations.
+At Barnum Lodge we offer:</p>
+<ul>
+<li>A unique environment of caring and supportive folks to learn and grow with.</li>
+<li>We strive to become better people.</li>
+<li>A way to support many local, national and international charities.</li>
+</ul>
+<p>The moment you walk up the stairs at the Corvallis Odd Fellowship Hall you will be met with the warmth and comradery that 200 years our foundational beliefs of Friendship, Love, and Truth have built. Barnum Lodge No. 7 is, amongst other things, a charitable organization that uses much of the money it generates through facility rentals to aid worthy organizations, events and individuals. If you are looking for an opportunity to be of service to your community, while enjoying making new friends, there is a place for you in this organization.</p>
+<p>We seek people of good character that believe we can make a difference in our world.  Barnum Lodge No. 7 could use your help. The work we do is worthwhile and important. The more active members we have, the easier it becomes to do our work and the more we can take on. We invite you to join in that work by becoming a member of the Lodge.</p>
+<p>The independent Order of Odd Fellows is a fraternal organization founded upon the principles of Friendship, Love and Truth. These three principles, we believe are essential for the future of our country, our community and our society. Friendship is the strongest bond of our association. As a member you are bound to participate with your brothers and sisters to safeguard our members and families in times of adversity and aid those in distress. Love is the link which requires neighborliness to our fellow human beings, which comes only after all hatred, envy and selfishness have been laid aside. Truth is the standard by which we value people. It is the foundation of our society. United together we can make a greater impact on our community than we can as individuals. We hope you will consider joining us at Barnum Lodge No. 7 in our effort to make a better community and world.</p>
+<p>Local</p>
+<p>Barnum lodge #7 Charity giving
+Barnum lodge  #7 has a very active giving program.  Though a set of grant giving programs the Lodge has been giving more than $20,000 dollars yearly to individuals and groups. In the next few years we hope to more that double this level.  These grants can be given to relieved the distress of people, usually in less than 6 weeks.  While names are not mentioned money for individuals go to people to help with medical needs, utilities and so on after other resources are unavailable.  Money for groups local has helped feed the local poor, homeless and distressed.  Also charity grant have been give locally for international aid, Friend of the Orphans (to help orphans in central American), Mercy Corp (international medical emergencies) and Oxfam (development aid), for instance.  Just listing all the recipients would take many pages.</p>
+<p>Beside giving money the Odd Fellows have donated the meeting hall for many community service event, lectures, movies, writer group and so many other activities.</p>
+<p>Here are a few of the thank you letters sent to Barnum lodge  Click here</p>
+<p>National &amp; International</p>
+<p>Educational Foundation
+The Education Foundation of the Independent Order of Odd Fellows began on September 20, 1927.  The purposes of the foundation is to operate a Revolving Loan Fund for students and is supported by donations to a trust.  Low interest rate loans are made for two or four year programs at an accredited college or university and for study at any recognized trade school after completion of high school.
+R. Kenneth Babb, Executive Director
+PO BOX 20455
+Winston-Salem NC  27120
+United States of America
+Tel: 336-724-5166
+Fax: 336-724-5116
+Email:  [ email ]</p>
+<p>Odd Fellow / Rebekah Visual Research Foundation
+Odd Fellows and Rebkeahs work to advance eye research through Professorships in Ophthalmology at the world famous Wilmer Ophthalmoligical Institute at John Hopkins School of Medicine in Baltimore, Maryland. The Odd Fellow World Eye Bank and Visual Research Foundation established in 1956 conducts intensive studies of corneal transplantation, allergic and congenital diseases of the eye.
+Wesley Nelson, Chairman
+24 Northmount Dr NW
+Calgary AB  T2K 3E8
+Canada
+Tel: 403-274-4644
+Fax: 403-274-4644
+Email: [ email ]
+Donations:
+C/O The Sovereign Grand Lodge, IOOF
+422 Trade Street
+Winston-Salem NC  27101-2830
+United States of America</p>
+<p>The SGL/IARA Joint Youth Committee
+Keith Ploof, Chairman
+PO BOX 54
+Highgate Center VT  05459
+United States of America
+Tel: 802-868-4943
+Fax:  802-868-5043
+Email:  [ email ]
+United Nations Pilgrimage for Youth
+We in Odd Fellowship are proud of the opportunity we give students who have completed their sophomore or junior year of high school. Groups of selected students are transported to New York where they have the opportunity to learn about the work the United Nations is doing to promote world peace, to educate the people of the world, and to relieve their suffering whether by famine, disease, or war. Students enjoy a question and answer period that sharpens their comprehension of United Nations affairs. That is but a small part of the learning experience for those selected to participate. The students are taken to many historical places and have a first hand view of their country’s beginning and of the Civil War. They visit many of the cultural and educational centers of the nation. Coming as they do from all areas of the United States and several foreign countries, they exchange views of education, politics, religion, world relationships and cultures. This learning and growing experience provided by Odd Fellows and Rebekahs is one of the most important and effective programs that we have. Approximately 42,000 students have participated in the United Nations Pilgrimage. No other organization is accorded this privilege
+Provides the opportunity for students who have completed their sophomore or junior year of high school to learn about the work the United Nations is doing to promote world peace, to educate the people of the world and to relieve their suffering whether by famine, disease, or by war.  No other organization is accorded this privilege.
+(IOOF United nations Educational Pilgrimage for Youth, Inc.) Charles Benson, Executive Director
+422 Trade St
+Winston-Salem NC  27101-2830
+United States of America
+Tel: 888-247-4983
+Fax: 613-962-3826
+Email: [ email ]
+Website: www.unpilgrimage.org</p>
+<p>Arthritis Advisory Board
+Odd Fellows and Rebekahs contribute to Arthritis Foundation where funds aid in research to find the cause, ways to prevent and treatments methods to fight this painful and crippling disease.
+Les D. Robertson, Chairman
+11932 Taylor Rd
+Churubusco IN  46723-9471
+United States of America
+Tel: 260-693-2360
+Fax: 260-693-2715
+Email:  [ email ]</p>
+<p>Odd Fellow and Rebekah Home Association
+The first Odd Fellow Home was established in 1872 in Pennsylvania. In a few years this grew to 65 homes located in most of the states and some foreign countries. Well over 100,000 orphans and aged members have been admitted to our homes in the intervening years
+Mark Ulrich, President
+1107 Walnut St
+Devils Lake ND  58301-3240
+United States of America
+Email: [ email ]
+Hunger and Disaster Relief Funds
+We demonstrate our obligation in &quot;relieving the distressed&quot; by providing funds for aid in natural disaster of flood, fire or earthquake.  This fund is supported entirely by donations and contributions by Odd Fellows and Rebekahs and the need for donations in always eminent.
+Terry Barrett, SGS
+422 Trade St
+Winston-Salem NC  27101
+United States of America
+Tel: 800-235-8358
+Fax: 336-722-7317
+Email:  [ email ]</p>
+<p>Community Service &amp; Living Legacy
+Instituted in 1989 with the goal of planting trees to beautify the environment and improve our ecology.  &quot; Plant a tree for those who come after me&quot;.  Many lodges have participated with their city Parks or Recreation Departments of School districts to plant trees in many areas where shade and environmental improvements would be appreciated.  Often Lodges plant trees in honor of members who have passed away.
+Mavis Paull
+422 Trade St
+Winston - Salem NC  27101-2830
+United States of America</p>
+<p>IOOF SOS Children's Village
+Several years ago, recognizing a need to care for orphaned, abandoned, neglected, and abused children, a non-governmental child welfare organization was formed which is now known as the SOS Children’s Villages and provides loving, stable homes in over 132 countries around the world. They serve all children in need regardless of race, nationality or creed. Every child is assured of the love and support of a surrogate parent with brothers and sisters, the opportunity to live in a permanent house, and the positive experience of being part of a larger village community. This prepares them to take their rightful place in society as happy, responsible, and productive adults.
+That is precisely what the Independent Order of Odd Fellows did when our children’s homes were operating all over this country for more than a century. At one time the Odd Fellows and Rebekahs had 65 children’s homes in the U.S. and were caring for over 100,000 children. The SOS Village Organization at this time has 456 Villages serving over 58,000 children.</p>
+<p>A partnership between the I.O.O.F. and The SOS Children’s Villages will be an ideal relationship between the two most dedicated, private, non-governmental, non-profit organizations in the world who are dedicated to protecting and nurturing orphans and all children in need. There are currently three SOS Villages in the United States and The I.O.O.F. is in the process of building a SOS Village in Cambodia which is planned for dedication in 2006.</p>
+<p>Henry &quot;Hank&quot; Dupray, PSGM
+1922 Jackson St
+Wilmington NC  28401
+United States of America
+Tel: 910-763-7660
+Fax: 910-763-7910
+Email: [ email ]</p>
+<p>Information from  the www.iooftx.org and www.ioof.org web sites</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="history.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="join.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="history.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="join.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
