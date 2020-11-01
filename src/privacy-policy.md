@@ -72,6 +72,3 @@ Our Web server automatically recognizes each visitor's domain name, but does not
 A "cookie" is a small piece of data stored on your computer's hard drive when you visit our Web site. IOOF uses cookies to analyze our Web site's overall traffic patterns and improve our visitors' online experience. We do not use cookies to store or collect any personal information. Many browsers provide an option to block or remove cookies. You can visit our website successfully while blocking cookies, but leaving cookies enabled in your browser will help us to improve our site's usability and effectiveness. Some areas of our online volunteer registration, orientation, and other areas require the use of cookies in order to maintain the security of your information, and allow you to go from one page to the next without entering your information multiple times.
 
 In order to provide a more comprehensive and useful site, the IOOF Web site contains links to other Web sites. IOOF is not responsible for the privacy practices of these sites.
-
-Contact Information about information contained on this page, and this website:
-Contact Us Web Page

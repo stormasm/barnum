@@ -6,6 +6,7 @@ The Odd Fellows is a fraternal and charitable non-profit organization that admit
 
 Barnum Lodge No. 7 was chartered on February 23, 1858. Corvallis's Odd Fellows Lodge was named for Eli M. Barnum, an energetic officer of the new Grand Lodge of Oregon. Please visit the link in the left column to learn more about the history of the Odd Fellows and the Corvallis lodge.
 
-If you are interested in renting our facility, please click the Hall Rental link. There is also a calendar of events, so you may confirm that a date is available. The south Ballroom is host to a variety of dance classes that are open to the public. The Odd Fellows is proud to be a premier event location in Corvallis, for classes, dance events, and special occasions!
+If you are interested in renting our facility, please call the number below. The south Ballroom is host to a variety of dance classes that are open to the public. The Odd Fellows is proud to be a premier event location in Corvallis, for classes, dance events, and special occasions!
 
-If you have further questions please call our business office 541-752-3023 or via [ email ]
+If you have further questions please go to
+[contact us](./contact-us.html).

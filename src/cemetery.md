@@ -15,5 +15,16 @@ As Odd Fellows have always done as their Duty, YES, we will bury the indigent an
 
 CONTACT CAN ALWAYS BE MADE BY MESSAGE BY CALLING 1 (541) 752-3023
 
+To see the Corvallis Odd Fellows' Historic Cemetery,
+go to Find a Grave by clicking on this:
 
-To see the Corvallis Odd Fellows' Historic Cemetery, go to Find a Grave by clicking on this logo above.  Many thanks to Anonymous for his or her lovely photos. We are fortunate to have such a dedicated  and talented fan of our historic cemetery.
+#### Cemetery Web Site Link
+
+[Corvallis Odd Fellows Historic Cemetery](https://www.findagrave.com/cemetery/835122/ioof-cemetery)
+
+IOOF Cemetery   
+4343 NW Witham Hill Dr  
+Corvallis, Oregon 97330   
+[Map Link to Cemetery](https://www.google.com/maps/place/IOOF+Cemetery,+4343+NW+Witham+Hill+Dr,+Corvallis,+OR+97330/@44.5858077,-123.3007788,17z/data=!4m5!3m4!1s0x54c03f42d374b521:0x6de593d5ba134aca!8m2!3d44.5851506!4d-123.2987165)
+
+[Located in Benton County, Oregon](https://www.co.benton.or.us/)

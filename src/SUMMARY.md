@@ -4,7 +4,6 @@
 	* [History](history.md)
 	* [Charity](charity.md)
 	* [Join The Lodge](join.md)
-* [Hall Rental](hall-rental.md)
 * [Charitable Request](charitable-request.md)
 * [Contact Us](contact-us.md)
 * [Cemetery](cemetery.md)

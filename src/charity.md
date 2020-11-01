@@ -109,12 +109,13 @@ IOOF SOS Children's Village
 
    A partnership between the I.O.O.F. and The SOS Children’s Villages will be an ideal relationship between the two most dedicated, private, non-governmental, non-profit organizations in the world who are dedicated to protecting and nurturing orphans and all children in need. There are currently three SOS Villages in the United States and The I.O.O.F. is in the process of building a SOS Village in Cambodia which is planned for dedication in 2006.
 
-Henry "Hank" Dupray, PSGM
-1922 Jackson St
-Wilmington NC  28401
-United States of America
-Tel: 910-763-7660
-Fax: 910-763-7910
-Email: [ email ]
+Henry "Hank" Dupray, PSGM   
+1922 Jackson St   
+Wilmington NC  28401   
+United States of America   
+Tel: 910-763-7660   
+Fax: 910-763-7910   
 
-Information from  the www.iooftx.org and www.ioof.org web sites
+#### Resources
+
+[Grand Lodge IOOF of Texas](https://www.iooftx.org/default.php)

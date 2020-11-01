@@ -10,4 +10,6 @@ Request for monetary grants or facility donations should be sent to the Lodge Se
 
 Due to the meeting schedule of the Lodge the grant process will take a minimum of 45 days. Please be aware that the Grant Committee must make contact with the group or individual making the request and then make a full report to the lodge members. If the members need more information the committee must gather more information and then again report to the members. If you have a deadline that must be met, please take this timeline into consideration. If a grant is not approved the organization will be contacted by the Lodge Secretary.
 
-Please click [ here ] to email the Lodge Secretary for more information.
+To email the Lodge Secretary for more information.
+
+Email: <a href="mailto:corvallisoddfellows@gmail.com">corvallisoddfellows@gmail.com </a>

@@ -1,19 +1,25 @@
-Links
+# Resources
 
-Below are links to other useful resources.
+Links to other useful resources.
 
-Sovereign Grand Lodge
+[Grand Lodge of Oregon, IOOF](http://www.oregonioof.org/)
 
-North American Grand lodge
+The Grand Lodge of Oregon   
+Independent Order of Odd Fellows   
+3202 SE Holgate Blvd.   
+Portland, OR 97202   
+503 236 9300   
 
-Downtown Corvallis Association
+[Sovereign Grand Lodge](https://odd-fellows.org/)
 
-Supporting downtown businesses
-Charity navigator
-Independent charity evaluator
-Give.org
-Helps donors make informed giving decisions
-Find-a-Grave
-Find people buried in Odd Fellows cemetery
-Tools for Organizations
-Non-profit friendly web development.
+The Sovereign Grand Lodge Independent Order of Odd Fellows   
+422 Trade Street   
+Winston-Salem, North Carolina 27101 USA   
+Phone: 800-235-8358   
+
+[Downtown Corvallis Association](https://www.downtowncorvallis.org)
+
+Downtown Corvallis Association   
+460 SW Madison Avenue, Suite 9   
+Corvallis OR 97333   
+Phone: 541.754.6624   
