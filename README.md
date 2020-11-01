@@ -13,3 +13,7 @@ closed so that is kind of cool.
 ### References
 
 [sidebar open by default](https://github.com/stormasm/mdBook/commit/53abee11b2f70c435c99ebe151cb75f77e191f98)
+
+```
+mdbook build -d ./docs
+```
