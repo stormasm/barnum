@@ -1,5 +1,5 @@
 
-This website is generated with this [forked mdbook](https://github.com/stormasm/mdBook).
+In the theme directory the following changes have been made...
 
 Which enables these trivial features changes...
 
