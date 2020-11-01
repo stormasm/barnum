@@ -1,4 +1,4 @@
-# Contact Us
+## Contact Us
 
 Independent Order of the Odd Fellow   
 223  SW 2nd  St   

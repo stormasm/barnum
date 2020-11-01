@@ -1,4 +1,4 @@
-Privacy Policy
+## Privacy Policy
 
 Independent Order Of Odd Fellows ("IOOF") provides access and use of this site ("Site") subject to your agreement to the following "Terms of Use" (the "Terms"). Please read these Terms carefully before accessing or using the Site. By accessing or using the Site, you agree to be bound by these Terms.
 The Terms, as well as the Site (and information contained within the Site) may be updated or revised from time to time without notice to you. You agree to periodically review these Terms, and your continued access to or use of the Site shall constitute your acceptance of the updated or revised Terms.

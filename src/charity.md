@@ -1,4 +1,4 @@
-Barnum Lodge Charity
+## Barnum Lodge Charity
 
  Barnum No. 7 Independent Order of the Odd Fellow invites you to explore the community that is Odd Fellowship. Our lodge is a family of brothers and sisters working to build a world that we want to leave to future generations.
 At Barnum Lodge we offer:

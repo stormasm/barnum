@@ -1,0 +1,5 @@
+[book]
+title = "Corvallis Odd Fellows Barnum Lodge #7"
+
+[output.html.search]
+enable = false

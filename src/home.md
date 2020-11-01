@@ -1,4 +1,4 @@
-Corvallis Odd Fellows ~ Barnum Lodge #7 ~ Est. February 23, 1858
+### Corvallis Odd Fellows ~ Barnum Lodge #7 ~ Est. February 23, 1858
 
 Welcome!
 

@@ -1,4 +1,4 @@
-# Resources
+## Resources
 
 Links to other useful resources.
 
