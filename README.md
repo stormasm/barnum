@@ -17,3 +17,7 @@ closed so that is kind of cool.
 ```
 mdbook build -d ./docs
 ```
+
+[github pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)
+
+[how to setup google domain for github pages](https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p58)
