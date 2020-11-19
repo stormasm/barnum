@@ -1,4 +1,28 @@
 
+
+#### To make changes to the barnum website
+
+Simply make changes in the src directory.   
+And then run this command:   
+
+```
+mdbook build -d ./docs
+```
+
+This command will blow away
+```
+docs/CNAME
+```
+
+And then simply restore it by running the command:
+
+```
+gco docs/CNAME
+```
+
+Commit all changed files and your new website will be
+up and running shortly !
+
 In the theme directory the following changes have been made...
 
 Which enables these trivial features changes...
