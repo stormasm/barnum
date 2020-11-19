@@ -1,6 +1,6 @@
 
 
-#### To make changes to the barnum website
+### To make changes to the barnum website
 
 Simply make changes in the src directory.   
 And then run this command:   
@@ -22,6 +22,8 @@ gco docs/CNAME
 
 Commit all changed files and your new website will be
 up and running shortly !
+
+### Random details encountered during development
 
 In the theme directory the following changes have been made...
 
