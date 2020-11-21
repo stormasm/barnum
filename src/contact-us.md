@@ -16,9 +16,11 @@ Email: <a href="mailto:corvallisoddfellows@comcast.net">corvallisoddfellows@comc
 
 #### Lodge
 
-* Noble Grand Charles Carmichael  
-* Vice Grand John Criscitiello   
-* Secretary  Cathy Lorensen   
+* Noble Grand: Aaron Russell
+* Vice Grand: Bob Griffith
+* Financial Secretary: Bonnie Tomski
+* Treasurer: Elaine Kahn
+* Recording Secretary: Ralph Alig
 
 Email: <a href="mailto:corvallisoddfellows@gmail.com">corvallisoddfellows@gmail.com </a>
 

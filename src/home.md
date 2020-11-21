@@ -8,5 +8,12 @@ Barnum Lodge No. 7 was chartered on February 23, 1858. Corvallis's Odd Fellows L
 
 If you are interested in renting our facility, please call the number below. The south Ballroom is host to a variety of dance classes that are open to the public. The Odd Fellows is proud to be a premier event location in Corvallis, for classes, dance events, and special occasions!
 
-If you have further questions please go to
+#### Business Office Contact Info
+
+Chelsea Henson   
+Business Manager: Building and rental information (541) 752-3023
+
+Email: <a href="mailto:corvallisoddfellows@comcast.net">corvallisoddfellows@comcast.net </a>
+
+For location information or if you have further questions please go to
 [contact us](./contact-us.html).
