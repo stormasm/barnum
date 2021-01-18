@@ -1,3 +1,9 @@
+## Hall Rental
+
+We have a brand new **Hall Rental** website.
+
+[Please click here for more details on the Hall Rental...](https://www.corvallisoddfellows.com)
+
 ### Corvallis Odd Fellows ~ Barnum Lodge #7 ~ Est. February 23, 1858
 
 Welcome!

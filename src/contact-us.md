@@ -27,7 +27,3 @@ Email: <a href="mailto:corvallisoddfellows@gmail.com">corvallisoddfellows@gmail.
 #### Charitable and Grant Requests
 
 Please contact the Lodge Secretary
-
-#### Cemetery   
-Chelsea Henson   
-Administrator
